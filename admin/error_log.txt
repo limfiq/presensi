@@ -1,0 +1,35 @@
+2025-07-18 11:00:54 - Mulai impor file Excel
+2025-07-18 11:00:54 - Row 1: ["1","Budi Santoso","123456789","9827654321","Jakarta","1980-05-15","Guru Matematika","Laki-laki","Jl. Merdeka 123","08123456789","budi@example.com","budi.jpg"]
+2025-07-18 11:00:54 - Skipping row 1: NIP 123456789 sudah ada
+2025-07-18 11:00:54 - Row 2: ["2","Ani Rahayu","545556555","3124423424","Bandung","1985-10-20","Guru Bahasa Inggris","Perempuan","Jl. Sudirman 45","08567891234","ani@example.com","default.jpg"]
+2025-07-18 11:00:54 - Berhasil mengimpor data untuk Ani Rahayu
+2025-07-18 11:00:54 - Row 3: ["3","Cahyo Pratama","987654321","4324242322","Surabaya","1978-03-10","Kepala Sekolah","Laki-laki","Jl. Veteran 10","08198765432","cahyo@example.com",null]
+2025-07-18 11:00:54 - Berhasil mengimpor data untuk Cahyo Pratama
+2025-07-18 11:00:54 - Total berhasil: 2 data guru
+2025-07-19 12:35:24 - Mulai impor file Excel
+2025-07-19 12:35:24 - Row 1: ["1","ROHIMAH, S.Pd","198501142003092001","3510175401850002","BANYUWANGI","1985-01-14","KEPALA MADRASAH","082338949125","PEREMPUAN","PELINGGIHAN - GROGOL","rohimaherman@gmail.com"]
+2025-07-19 12:35:24 - Error processing Excel file: Data too long for column 'no_hp' at row 1
+2025-07-19 12:38:41 - Mulai impor file Excel
+2025-07-19 12:38:41 - Row 1: ["1","ROHIMAH, S.Pd","198501142003092001","3510175401850002","BANYUWANGI","1985-01-14","KEPALA MADRASAH","082338949125","PEREMPUAN","PELINGGIHAN - GROGOL","rohimaherman@gmail.com"]
+2025-07-19 12:38:41 - Error processing Excel file: Data too long for column 'no_hp' at row 1
+2025-07-19 12:46:13 - Mulai impor file Excel
+2025-07-19 12:46:13 - Row 1: ["1","ROHIMAH, S.Pd","198501142003092000.00","3510175401850002.00","BANYUWANGI","1985-01-14","KEPALA MADRASAH","82338949125.00","PEREMPUAN","PELINGGIHAN - GROGOL","rohimaherman@gmail.com"]
+2025-07-19 12:46:13 - Error processing Excel file: Data too long for column 'nip' at row 1
+2025-07-19 12:47:39 - Mulai impor file Excel
+2025-07-19 12:47:39 - Row 1: ["1","ROHIMAH, S.Pd","198501142003092000.00","3510175401850002.00","BANYUWANGI","1985-01-14","KEPALA MADRASAH","82338949125.00","PEREMPUAN","PELINGGIHAN - GROGOL","rohimaherman@gmail.com"]
+2025-07-19 12:47:39 - Error processing Excel file: Data too long for column 'nip' at row 1
+2025-07-19 12:54:15 - Mulai impor file Excel
+2025-07-19 12:54:15 - Row 1: ["1","ROHIMAH, S.Pd","198501142003092000","3510175401850000","BANYUWANGI","14-Jan-85","KEPALA MADRASAH","82338949125.00","PEREMPUAN","PELINGGIHAN - GROGOL","rohimaherman@gmail.com"]
+2025-07-19 12:54:15 - Error processing Excel file: Data too long for column 'no_hp' at row 1
+2025-07-19 12:55:38 - Mulai impor file Excel
+2025-07-19 12:55:38 - Row 1: ["1","ROHIMAH, S.Pd","198501142003092000","3510175401850000","BANYUWANGI","14-Jan-85","KEPALA MADRASAH","82338949125","PEREMPUAN","PELINGGIHAN - GROGOL","rohimaherman@gmail.com"]
+2025-07-19 12:55:38 - Error processing Excel file: Data too long for column 'no_hp' at row 1
+2025-07-19 12:56:56 - Mulai impor file Excel
+2025-07-19 12:56:56 - Row 1: ["1","ROHIMAH, S.Pd","198501142003092000","3510175401850000","BANYUWANGI","14-Jan-85","KEPALA MADRASAH","82338949125","PEREMPUAN","PELINGGIHAN - GROGOL","rohimaherman@gmail.com"]
+2025-07-19 12:56:56 - Error processing Excel file: Data too long for column 'no_hp' at row 1
+2025-07-19 12:57:22 - Mulai impor file Excel
+2025-07-19 12:57:22 - Row 1: ["1","ROHIMAH, S.Pd","198501142003092000","3510175401850000","BANYUWANGI","14-Jan-85","KEPALA MADRASAH","82338949125","PEREMPUAN","PELINGGIHAN - GROGOL","rohimaherman@gmail.com"]
+2025-07-19 12:57:22 - Error processing Excel file: Data too long for column 'no_hp' at row 1
+2025-07-19 12:58:53 - Mulai impor file Excel
+2025-07-19 12:58:53 - Row 1: ["1","ROHIMAH, S.Pd","198501142003092000","3510175401850000","BANYUWANGI","14-Jan-85","KEPALA MADRASAH","82338949125","PEREMPUAN","PELINGGIHAN - GROGOL","rohimaherman@gmail.com"]
+2025-07-19 12:58:53 - Error processing Excel file: Data too long for column 'no_hp' at row 1

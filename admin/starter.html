@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Presensi MIDU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f1f5f9;
+        }
+        .sidebar {
+            min-height: 100vh;
+            background-color: #2c6e49;
+            color: white;
+            padding-top: 20px;
+            position: fixed;
+            width: 250px;
+            transition: transform 0.3s ease;
+            z-index: 1000;
+            transform: translateX(0); /* Default tampil */
+        }
+        .sidebar .nav-link {
+            color: #d4edda;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px 10px;
+            transition: all 0.3s;
+        }
+        .sidebar .nav-link:hover,
+        .sidebar .nav-link.active {
+            background-color: #3d8b5e;
+            color: white;
+        }
+        .sidebar .nav-link i {
+            margin-right: 10px;
+        }
+        .content {
+            padding: 20px;
+            margin-left: 250px;
+            transition: margin-left 0.3s ease;
+        }
+        .navbar-brand {
+            color: #2c6e49 !important;
+            font-weight: bold;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .card-header {
+            background-color: #2c6e49;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+        .logo {
+            width: 100px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        /* Mobile only */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-250px);
+            }
+            .sidebar.active {
+                transform: translateX(0);
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <img src="../assets/img/logo.png" alt="MIDU Logo" class="logo">
+            <h4 class="text-center mb-4">MIDU Presensi</h4>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#dashboard">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#data-siswa">
+                        <i class="fas fa-user-graduate"></i> Data Siswa
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#data-guru">
+                        <i class="fas fa-chalkboard-teacher"></i> Data Guru
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#data-presensi">
+                        <i class="fas fa-calendar-check"></i> Data Presensi
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#laporan-presensi">
+                        <i class="fas fa-file-alt"></i> Laporan Presensi
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#setting">
+                        <i class="fas fa-cog"></i> Setting
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="content col-12">
+            <nav class="navbar navbar-light bg-white shadow-sm mb-4">
+                <div class="container-fluid">
+                    <button class="navbar-toggler d-md-none" type="button" id="toggleSidebar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <span class="navbar-brand">Sistem Presensi MIDU</span>
+                    <div>
+                        <span class="navbar-text">Admin</span>
+                        <a href="#" class="btn btn-outline-danger btn-sm ms-2">Logout</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Dashboard</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6>Selamat datang di Sistem Presensi MIDU</h6>
+                        <p>Gunakan menu di sisi kiri untuk navigasi. Ini adalah halaman dashboard yang memberikan gambaran umum sistem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Toggle sidebar on mobile
+        document.getElementById('toggleSidebar').addEventListener('click', function () {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        });
+
+        // Navigation handling
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
+
+                // Update content based on clicked menu
+                const content = document.querySelector('.card-body');
+                const title = document.querySelector('.card-header h5');
+                const menu = this.textContent.trim();
+                title.textContent = menu;
+                content.innerHTML = `<h6>${menu}</h6><p>Halaman ${menu} Sistem Presensi MIDU.</p>`;
+
+                // Close sidebar on mobile after clicking
+                if (window.innerWidth <= 768) {
+                    document.getElementById('sidebar').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
